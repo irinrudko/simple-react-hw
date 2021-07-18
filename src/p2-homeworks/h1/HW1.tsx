@@ -3,8 +3,8 @@ import Message from './Message'
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
+    name: 'John Dogh',
+    message: "Hey there! What's up man?",
     time: '22:00',
 }
 
@@ -12,9 +12,8 @@ function HW1() {
     return (
         <div>
             <hr />
-            homeworks 1
+            homework 1
 
-            should work (должно работать)
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
