@@ -1,3 +1,23 @@
-.someClass {
+.container {
+    background-color: rgba(0, 0, 0, 0.404);
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
 
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.button {
+    height: 40px;
+    width: 80px;
+    background-color: rgb(100, 182, 237);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }

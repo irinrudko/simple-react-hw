@@ -1,0 +1,26 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.title {
+    font-weight: 800;
+
+}
+
+.priority {
+    font-weight: 600;
+}
+
+.removeButton {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(100, 182, 237);
+    color: white;
+    border: 1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+    margin: 1px;
+}
