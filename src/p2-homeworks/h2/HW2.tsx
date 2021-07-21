@@ -11,7 +11,7 @@ export type AffairType = {
 export type FilterType = 'all' | AffairPriorityType
 
 // constants
-const defaultAffairs: Array<AffairType> = [
+export const defaultAffairs: Array<AffairType> = [
     { _id: 1, name: 'React', priority: 'high' },
     { _id: 2, name: 'anime', priority: 'low' },
     { _id: 3, name: 'games', priority: 'low' },
@@ -19,7 +19,7 @@ const defaultAffairs: Array<AffairType> = [
     { _id: 5, name: 'html & css', priority: 'middle' },
 ]
 
-let filteredTasks = defaultAffairs;
+export let filteredTasks = defaultAffairs;
 
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any

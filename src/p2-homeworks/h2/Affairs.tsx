@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import Affair from './Affair'
-import { AffairType, FilterType } from './HW2'
+import { AffairType, defaultAffairs, filterAffairs, filteredTasks, FilterType } from './HW2'
 import style from './Affairs.module.css';
 
 
 type AffairsPropsType = { // need to fix any
-    data: Array<AffairType>
+    data: AffairType[]
     setFilter: Function // need to fix
     deleteAffairCallback: (_id: number) => void
 }
@@ -19,10 +19,10 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => { console.log('has been clicked') } // need to fix
-    const setHigh = () => { }
-    const setMiddle = () => { }
-    const setLow = () => { }
+    const setAll = () => { return props.setFilter('all') }
+    const setHigh = () => { return props.setFilter('high') }
+    const setMiddle = () => { return props.setFilter('middle') }
+    const setLow = () => { return props.setFilter('low') }
 
     return (
         <div className={style.container}>

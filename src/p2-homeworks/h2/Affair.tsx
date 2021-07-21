@@ -6,17 +6,15 @@ import Affairs from './Affairs';
 
 type AffairPropsType = {
     // key не нужно типизировать
-    affair: AffairType //need to fix
-    deleteAffairCallback: any //need to fix
+    affair: AffairType
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
-
-
-
+        props.deleteAffairCallback(props.affair._id)
         console.log(props.affair._id)
-    }// need to fix
+    }
 
     return (
         <div className={style.cont}>
