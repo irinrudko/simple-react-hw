@@ -19,10 +19,10 @@ export const defaultAffairs: Array<AffairType> = [
     { _id: 5, name: 'html & css', priority: 'middle' },
 ]
 
-export let filteredTasks = defaultAffairs;
+let filteredTasks = defaultAffairs;
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any
+const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === 'all') return affairs
     if (filter === 'low') {
         return affairs.filter(t => t.priority === 'low')
@@ -33,10 +33,14 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): a
     if (filter === 'high') {
         return affairs.filter(t => t.priority === 'high')
     }
-    console.log(filteredTasks)
+    else return []
 }
-export const deleteAffair = (affairs: Array<AffairType>, _id: number): any => { // need to fix any
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
     return affairs.filter(t => t._id !== _id)
+}
+
+const setColor = (affairs: Array<AffairType>) => {
+    return affairs.map(t => t.priority)
 }
 
 function HW2() {
@@ -49,7 +53,7 @@ function HW2() {
     return (
         <div>
             <hr />
-            homeworks 2
+            homework 2
 
             {/*should work (должно работать)*/}
             <Affairs

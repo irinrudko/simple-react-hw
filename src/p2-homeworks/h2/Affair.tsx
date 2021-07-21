@@ -13,15 +13,16 @@ type AffairPropsType = {
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         props.deleteAffairCallback(props.affair._id)
-        console.log(props.affair._id)
     }
+
+    const priorityColor = style.evenSpace + ' ' + style[props.affair.priority]// set even space and priority color + передать классы в className
 
     return (
         <div className={style.cont}>
 
             <div className={style.task}>
-                <span className={style.title}>{props.affair.name}</span>
-                <span className={style.priority}>{props.affair.priority}</span>
+                <span className={`${style.title} ${style.evenSpace}`}>{props.affair.name}</span>
+                <span className={`${style.priority} ${priorityColor}`}>{props.affair.priority}</span>
                 <button className={style.removeButton} onClick={deleteCallback}>X</button>
             </div>
 

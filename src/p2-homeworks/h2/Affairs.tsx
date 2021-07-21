@@ -1,12 +1,11 @@
-import React, { MouseEventHandler } from 'react'
 import Affair from './Affair'
-import { AffairType, defaultAffairs, filterAffairs, filteredTasks, FilterType } from './HW2'
+import { AffairType, FilterType } from './HW2'
 import style from './Affairs.module.css';
 
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: AffairType[]
-    setFilter: Function // need to fix
+    setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number) => void
 }
 
@@ -31,11 +30,11 @@ function Affairs(props: AffairsPropsType) {
 
             <div className={style.buttonContainer}>
                 <button onClick={setAll} className={style.button}>All</button>
-                <button onClick={setHigh} className={style.button}>High</button>
-                <button onClick={setMiddle} className={style.button}>Middle</button>
-                <button onClick={setLow} className={style.button}>Low</button>
+                <button onClick={setHigh} className={`${style.button}`}>High</button>
+                <button onClick={setMiddle} className={`${style.button}`}>Middle</button>
+                <button onClick={setLow} className={`${style.button}`}>Low</button>
             </div>
-        </div>
+        </div >
     )
 }
 

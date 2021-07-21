@@ -24,3 +24,20 @@
     cursor: pointer;
     margin: 1px;
 }
+
+.evenSpace {
+    margin: 10px;
+    width: 100px;
+}
+
+.high {
+    color: crimson
+}
+
+.middle {
+    color: orange
+}
+
+.low {
+    color: lightgreen
+}
