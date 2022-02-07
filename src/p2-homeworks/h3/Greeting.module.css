@@ -1,9 +1,50 @@
-.correct {
-    border: 1px solid green;
+.item {
+    display: flex;
+    align-items: center;
 }
 
 .error {
     border: 1px solid red;
 }
 
-.green_input {}
+.error_message {
+    display: flex;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: #ffffff;
+    width: fit-content;
+}
+
+.input {
+    border: 1px solid #ffffff;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+    padding: 3px;
+    padding-left: 10px;
+    margin: 2px;
+    margin-left: 10px;
+}
+
+.button {
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(100, 182, 237);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.counter {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 4px;
+    border-radius: 10px;
+}
