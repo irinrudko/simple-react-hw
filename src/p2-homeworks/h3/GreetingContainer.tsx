@@ -19,6 +19,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value); // need to fix
     }
+
     const addUser = () => {
         if (name.trim()) {
             alert(`Hello, ${name.trim()}!`) // need to fix
@@ -29,7 +30,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
         }
     }
 
-    const inputPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         setError('')
         if (e.charCode === 13) {
             addUser()
@@ -42,7 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
         <Greeting
             name={name}
             setNameCallback={setNameCallback}
-            inputPressHandler={inputPressHandler}
+            onEnter={onEnter}
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
