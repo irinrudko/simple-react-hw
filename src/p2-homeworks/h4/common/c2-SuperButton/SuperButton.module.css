@@ -1,7 +1,26 @@
 .default {
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(100, 182, 237);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
 
 }
 
 .red {
     background: red;
+}
+
+.disabled {
+    opacity: 0.5;
+    background: #000;
+    cursor: auto;
+}
+
+.default:active {
+    border: 1px solid black;
 }
