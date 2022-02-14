@@ -23,7 +23,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         debugger
         onChange && onChange(e)
 
-        onChangeChecked && onChangeChecked(e.target.checked)
+        onChangeChecked && onChangeChecked(e.currentTarget.checked)
         // сделайте так чтоб работал onChange и onChangeChecked
     }
 

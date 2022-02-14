@@ -1,7 +1,15 @@
 .checkbox {
 
+    /* appearance: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+ */
+
 }
 
-.spanClassName {
+.checkbox:checked {}
 
-}
+.spanClassName {}
