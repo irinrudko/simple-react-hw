@@ -1,0 +1,34 @@
+.header {
+    background-color: #0000007e;
+    display: flex;
+    max-width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    column-gap: 10px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: rgb(94, 221, 204);
+}
+
+.link:active {
+    color: rgb(46, 202, 181);
+}
+
+.blue {
+    color: rgb(45, 144, 224)
+}
+
+.yellow {
+    color: rgb(175, 192, 81)
+}
+
+.pink {
+    color: rgb(172, 66, 154)
+}
