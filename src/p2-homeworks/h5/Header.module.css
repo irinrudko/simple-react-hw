@@ -4,13 +4,31 @@
     max-width: fit-content;
     padding: 10px;
     margin: 10px;
-    column-gap: 10px;
+    margin-left: 0;
+}
+
+.item {
+    display: flex;
+    margin-right: 20px;
+    column-gap: 20px;
+}
+
+.none {
+    display: none;
 }
 
 .link {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+}
+
+.navbarButton {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(100, 182, 237);
+    border: 1px solid rgb(217, 217, 228);
 }
 
 .link:hover {
