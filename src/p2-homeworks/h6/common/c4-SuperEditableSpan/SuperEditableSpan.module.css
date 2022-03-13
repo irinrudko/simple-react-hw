@@ -1,0 +1,6 @@
+.editSpan {
+    background: url('pencil.png') no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+    background-position: 5px 0;
+}
