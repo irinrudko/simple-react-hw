@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
@@ -9,8 +9,8 @@ function HW7() {
 
     return (
         <div>
-            <hr/>
-            homeworks 7
+            <hr />
+            homework 7
 
             {/*should work (должно работать)*/}
             <div>
@@ -29,11 +29,11 @@ function HW7() {
                 />
             </div>
 
-            <hr/>
+            <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
-            <hr/>
+            <hr />
         </div>
     )
 }
