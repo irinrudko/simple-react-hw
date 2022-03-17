@@ -50,8 +50,8 @@ function HW8() {
                 </div>
                 <div className={s.buttons}>
 
-                    <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-                    <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                    <div><SuperButton onClick={sortUp}>sort name up</SuperButton></div>
+                    <div><SuperButton onClick={sortDown}>sort name down</SuperButton></div>
                     <div><SuperButton onClick={check18}>check 18</SuperButton></div>
 
                 </div>

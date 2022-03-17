@@ -15,7 +15,7 @@ beforeEach(() => {
     ]
 })
 
-it('sort name up', () => {
+it('should sort name up', () => {
     const newState = homeWorkReducer(initialState, { type: 'sort', payload: 'up' })
 
     expect(newState[0]._id).toBe(1)
@@ -24,16 +24,15 @@ it('sort name up', () => {
     console.log(newState)
     // expect(...).toBe(...)
 })
-it('sort name down', () => {
+it('should sort name down', () => {
     const newState = homeWorkReducer(initialState, { type: 'sort', payload: 'down' })
 
     expect(newState[0]._id).toBe(0)
     expect(newState[5]._id).toBe(1)
 
 })
-it('check age 18', () => {
+it('should check the age is 18+', () => {
     const newState = homeWorkReducer(initialState, { type: 'check', payload: 18 })
 
-    expect(newState.age).not.toBe(3)
-    expect(newState.age).not.toBe(16)
+    expect(newState.length).toBe(4)
 })

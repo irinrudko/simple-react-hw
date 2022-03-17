@@ -1,6 +1,5 @@
 .container {
     width: 400px;
-
 }
 
 .box {
@@ -9,7 +8,9 @@
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    background-color: aliceblue;
+    background-color: #0000007e;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .item {
