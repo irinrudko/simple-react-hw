@@ -12,10 +12,7 @@ function Clock() {
 
     const start = () => {
         stop()
-        const stringTime = date.getHours().toLocaleString()
-
         const id: number = +setInterval(() => {
-            console.log('wew');
             setDate(new Date())
         }, 1000)
         setTimerId(id)
