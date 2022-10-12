@@ -11,7 +11,7 @@ function Junior() {
             <h1>junior</h1>
             <HW7 />
             <HW8 />
-            {/* <HW9 /> */}
+            <HW9 />
             {/* <HW10 /> */}
             {/* <HW11 /> */}
         </div>
